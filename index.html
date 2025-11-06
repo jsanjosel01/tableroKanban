@@ -8,7 +8,57 @@
     <title>tableroKanban</title>
 </head>
 <body>
-   <h1>Tablero Kanban</h1>
+  
+    <!--Contenido principal, cabecera-->
+    <main>
+    <h1>Tablero Kanban</h1>
+
+    <!--DIV principal-->
+    <div class="board">
+
+        <!-- POR HACER-->
+      <section class="column" id="todo">
+        <h2>Todo</h2>
+
+        <!--DIVS tarjetas-->
+        <div class="cards">
+          <article class="card">
+            <p>Terminar la tarea 2 de cliente: Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur sequi cumque nihil beatae provident quisquam velit, magnam fuga rerum odit a aperiam recusandae.</p>
+            <button class="delete"> </button>
+          </article>
+          <article class="card"><p>Terminar la tarea 3 de cliente: Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></article>
+          <article class="card"><p>Terminar la tarea 2 de diseño</p></article>
+        </div>
+
+        <input type="text" class="new-task" placeholder="Introduce un titulo">
+
+        <button class="add-task">Añadir tarjeta</button>
+      </section>
+
+      <!-- EN PROCESO -->
+      <section class="column" id="doing">
+        <h2>Doing</h2>
+        <div class="cards">
+          <article class="card">
+            <p>Terminar la tarea 2 de cliente: Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur sequi cumque nihil beatae provident quisquam velit, magnam fuga rerum odit a aperiam recusandae.</p>
+          </article>
+        </div>
+        <p class="add-hint"> Añade una tarjeta</p>
+      </section>
+
+      <!-- HECHO -->
+      <section class="column" id="done">
+        <h2>Done</h2>
+        <div class="cards"></div>
+        <p class="add-hint"> Añade una tarjeta</p>
+      </section>
+    </div>
+
+  </main>
+
+  <!-- Pie de página -->
+  <footer> </footer>
+  
 </body>
 </html>
 
