@@ -104,19 +104,26 @@ h1 {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-.card p {
-  margin: 0;
-  font-size: 0.95rem;
-  line-height: 1.3;
-  transition: var(--transition);
-  padding-right: 0;
-}
-
-/* Efecto hover en tarjeta */
+/* Hover en tarjeta */
 .card:hover {
   background-color: var(--color-card-hover);
   transform: translateY(-2px);
 }
+
+/* Párrafo/texto de las tarjeta */
+.card p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.3;
+  padding-right: 0;
+
+  transition: transform 0.3s ease;
+}
+
+.card:hover p {
+  transform: translateX(8px); /* Se mueve hacia la derecha */
+}
+
 
 /* Btn eliminar - ICONO  */
 .delete {
@@ -129,21 +136,17 @@ h1 {
   font-size: 1rem;
   color: var(--dark-color);
 
+  opacity: 0; /*Esto para que se oculte*/
   transition: var(--transition);  /* Transicion */
 }
 
 /* Mostrar */
 .card:hover .delete {
-  opacity: 1;
+  opacity: 1; /* Aparece*/
+  
 }
 
-
-/* Se mueve hacia la izquierda */
-.card:hover p {
-  padding-right: 25px;
-}
-
-/* Hover sobre btn eliminar */
+/* Hace que el icono cambie de color */
 .delete:hover {
   color: var(--color-delete-hover);
   transform: scale(1.2);
