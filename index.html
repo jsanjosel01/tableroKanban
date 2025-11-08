@@ -34,10 +34,13 @@
           <article class="card"><p>Terminar la tarea 3 de cliente: Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></article>
           <article class="card"><p>Terminar la tarea 2 de diseño.</p></article>
           <article class="card"><p>Terminar la tarea 1 de servidor: Lorem ipsum dolor sit amet consectetur adipisicing elit. </p></article>
+          
+          <button class="add-card-btn">+ Añadir tarjeta</button>
         </div>
 
-        <input type="text" class="new-task" placeholder="Introduce un titulo">
+       <input type="text" class="new-task" placeholder="Introduce un título" style="display:none;"> <!--Display none, para q no se muestre-->
 
+        <!-- Btn Añadir tarjeta + borrarla con el Icono-->
         <div class="task-actions">
           <button class="add-task">Añadir tarjeta</button>
           <button class="delete2"><i class='bx bxs-x-circle'></i> </button> <!-- ICONO -->
@@ -51,15 +54,21 @@
           <article class="card">
             <p>Terminar la tarea 2 de cliente: Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur sequi cumque nihil beatae provident quisquam velit, magnam fuga rerum odit a aperiam recusandae.</p>
           </article>
+
+          <button class="add-card-btn"> + Añade una tarjeta</button>
         </div>
-        <p class="add-hint"> + Añade una tarjeta</p>
+
+       
+      </section>
+        
       </section>
 
       <!-- HECHO -->
       <section class="column" id="done">
         <h2>Done</h2>
-        <div class="cards"></div>
-        <p class="add-hint"> + Añade una tarjeta</p>
+        <div class="cards">
+           <button class="add-card-btn"> + Añade una tarjeta</button>
+       </div>
       </section>
     </div>
 
