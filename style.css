@@ -250,3 +250,21 @@ h1 {
   color: #172b4d;
 
 }
+
+
+/* Responsive, van tapandose las columnas si hacemos la pantalla mas pequeña */
+.tablero {
+  overflow-x: auto;         /* scroll horizontal entre las columnas */
+  padding-bottom: 10px;
+ 
+}
+
+.column {
+  min-width: 250px;
+  
+}
+
+
+
+
+
